@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Ques1Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_id_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:title="Quiz"
+        android:paddingLeft="40dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_id_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+            <TextView
+                android:id="@+id/question1"
+                android:layout_below="@+id/toolbar_id_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="In which year the first computer with mouse is sold?"
+                android:textColor="@color/textcolor"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/button_border"
+                android:text="1976"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/button_border"
+                android:text="1984"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_border"
+                android:text="1972"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/button_border"
+                android:text="1980"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

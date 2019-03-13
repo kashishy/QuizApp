@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QuizAPP</string>
+    <string name="quiz">QUIZ</string>
+    <string name="time">TIME</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="start">start</string>
+    <string name="todo">TODO</string>
+    <string name="who_won_the_football_worldcup_2018">Who won the football worldcup 2018 ?</string>
+    <string name="croatia">Croatia</string>
+    <string name="france">France</string>
+    <string name="brazil">Brazil</string>
+    <string name="argentina">Argentina</string>
+    <string name="sign_up">sign up</string>
+</resources>

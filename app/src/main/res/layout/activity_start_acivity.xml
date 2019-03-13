@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="150dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="202dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/irectangle2"
+        android:fontFamily="@font/acme"
+        android:text="@string/quiz"
+        android:textAlignment="center"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="202dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/irectangle3"
+        android:fontFamily="@font/acme"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start1"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/acme"
+        android:text="@string/start"
+        android:textColor="@color/textcolor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

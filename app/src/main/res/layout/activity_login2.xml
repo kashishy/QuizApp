@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_id_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:title="LOGIN"
+        android:paddingLeft="40dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_id_login"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <ImageView
+                android:id="@+id/lbrain"
+                android:layout_below="@+id/toolbar_id_login"
+                android:layout_width="136dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/iimage3" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <EditText
+                android:id="@+id/lusername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_border"
+                android:drawableLeft="@drawable/user_icon"
+                android:hint="@string/user_name"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/lpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_border"
+                android:drawableStart="@drawable/lock_icon"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/llogin"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView4"
+                android:layout_gravity="center"
+                android:background="@drawable/button_border"
+                android:text="@string/login"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_above="@+id/lsignup"
+                android:text="@string/or"
+                android:textColor="@color/textcolor"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/lsignup"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/button_border"
+                android:text="@string/sign_up"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
