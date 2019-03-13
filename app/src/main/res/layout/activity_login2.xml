@@ -40,7 +40,6 @@
                 android:contentDescription="@string/todo"
                 app:srcCompat="@drawable/iimage3" />
 
-
         </LinearLayout>
 
         <LinearLayout
@@ -117,7 +116,6 @@
                 android:textColor="@color/textcolor" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 

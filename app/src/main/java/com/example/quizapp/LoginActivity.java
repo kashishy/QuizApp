@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,10 +22,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login2);
 
 
-        loginb=(Button)findViewById(R.id.llogin);
-        signb=(Button)findViewById(R.id.lsignup);
-        e1=(EditText)findViewById(R.id.lusername);
-        e2=(EditText)findViewById(R.id.lpassword);
+        loginb=findViewById(R.id.llogin);
+        signb=findViewById(R.id.lsignup);
+        e1=findViewById(R.id.lusername);
+        e2=findViewById(R.id.lpassword);
         mydb=new DatabaseHelper(this);
         loginb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,14 +33,10 @@ public class LoginActivity extends AppCompatActivity {
                 f = 0;
                 Cursor cursor = mydb.getAllData();
                 if (cursor.getCount() == 0) {
-                    //no data
                     showAll("Error", "No data found");
                 } else {
                     StringBuffer buffer=new StringBuffer();
                     while (cursor.moveToNext()) {
-                        //  buffer.append("ID : "+cursor.getString(0)+"\n");
-                        // buffer.append("Name : "+cursor.getString(1)+"\n");
-                        //buffer.append("Password : "+cursor.getString(2)+"\n");
                         if (cursor.getString(1).equals(e1.getText().toString())) {
                             if (cursor.getString(2).equals(e2.getText().toString())) {
                                 f = 1;
@@ -57,7 +52,6 @@ public class LoginActivity extends AppCompatActivity {
                         it2.putExtra("x1", x);
                         startActivity(it2);
                     }
-                    //showAll("Data", buffer.toString());
                 }
             }
         });

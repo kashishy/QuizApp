@@ -44,6 +44,5 @@ public class ResultActivity extends AppCompatActivity {
     public void onBackPressed()
     {
         Toast.makeText(this,"Can not Go Back",Toast.LENGTH_SHORT).show();
-        // Your Code Here. Leave empty if you want nothing to happen on back press.
     }
 }

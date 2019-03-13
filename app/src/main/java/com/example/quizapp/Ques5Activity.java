@@ -12,8 +12,6 @@ import android.widget.Toast;
 public class Ques5Activity extends AppCompatActivity {
 
     Button b1,b2,b3,b4;
-    // Global g=(Global)getApplication();
-    //int t=g.getData();
     Toolbar toolbar;
     int x=0;
     @Override
@@ -26,15 +24,11 @@ public class Ques5Activity extends AppCompatActivity {
         b2=(Button)findViewById(R.id.button3);
         b3=(Button)findViewById(R.id.button4);
         b4=(Button)findViewById(R.id.button5);
-        Resources resources = getResources();
-        //  t=g.getData();
         Bundle b=getIntent().getExtras();
         x=b.getInt("x1");
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //t++;
-                //g.setData(t);
                 x++;
                 Intent it = new Intent(Ques5Activity.this, ResultActivity.class);
                 it.putExtra("x1", x);
@@ -70,6 +64,5 @@ public class Ques5Activity extends AppCompatActivity {
     public void onBackPressed()
     {
         Toast.makeText(this,"Can not Go Back",Toast.LENGTH_SHORT).show();
-        // Your Code Here. Leave empty if you want nothing to happen on back press.
     }
 }

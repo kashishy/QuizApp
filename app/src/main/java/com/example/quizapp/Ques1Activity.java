@@ -24,15 +24,11 @@ public class Ques1Activity extends AppCompatActivity {
         b2=(Button)findViewById(R.id.button3);
         b3=(Button)findViewById(R.id.button4);
         b4=(Button)findViewById(R.id.button5);
-        //t=g.getData();
-        Resources resources = getResources();
         Bundle b=getIntent().getExtras();
         x=b.getInt("x1");
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // t++;
-                //g.setData(t);
                 x++;
                 Intent it = new Intent(Ques1Activity.this, Ques2Activity.class);
                 it.putExtra("x1", x);
@@ -68,6 +64,5 @@ public class Ques1Activity extends AppCompatActivity {
     public void onBackPressed()
     {
         Toast.makeText(this,"Can not Go Back",Toast.LENGTH_SHORT).show();
-        // Your Code Here. Leave empty if you want nothing to happen on back press.
     }
 }
