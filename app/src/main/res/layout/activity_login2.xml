@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         app:titleTextColor="#ffffff"
-        app:title="LOGIN"
+        app:title="QUIZ"
         android:paddingLeft="40dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -84,7 +84,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.2"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingTop="10dp">
             <Button
                 android:id="@+id/llogin"
                 android:layout_width="145dp"
@@ -98,7 +99,7 @@
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_above="@+id/lsignup"
                 android:text="@string/or"
@@ -110,7 +111,6 @@
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="45dp"
                 android:background="@drawable/button_border"
                 android:text="@string/sign_up"
                 android:textColor="@color/textcolor" />
