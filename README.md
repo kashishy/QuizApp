@@ -4,7 +4,7 @@ Simple Offline QuizAPP which have five multiple choice questions.
 # Getting Started
 Link to download APK of the app is given below. After installing app,first you have to signup in the app,after signup now login with the same username and password.
 
-#Build With
+# Build With
 Java for coding
 XMl for desiging
 SQL Lite for login and signup purpose
